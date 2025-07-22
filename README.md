@@ -27,32 +27,6 @@ The goal is to create a dynamic display — potentially wall-mounted — that in
 
 ---
 
-## 📁 Folder Structure (So Far)
-
-network-mural/
-├── backend/                 # Core Flask app and logic
-│   ├── app.py               # Entrypoint
-│   ├── network_monitor.py   # psutil wrapper
-│   ├── ollama_client.py     # prompt generation via Ollama
-│   ├── socket_server.py     # socket event handling
-│   └── stable_diffusion_client.py  # image generation via SD (WIP)
-│
-├── frontend/                # Static frontend files (WIP)
-│   ├── app.js
-│   ├── index.html
-│   ├── style.css
-│   └── three/               # Three.js modules (planned)
-│
-├── static/                  # Hosts generated images
-├── templates/               # Flask template support (minimal for now)
-├── requirements.txt
-├── .env                     # Local environment vars
-├── Dockerfile               # Container build config (TBD)
-├── docker-compose.yml       # Dev orchestration (TBD)
-└── README.md
-
----
-
 ## 🛠️ Setup (Dev)
 
 1. Clone the repo and create a virtual environment:
