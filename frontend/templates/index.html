@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI-Powered Network Mural</title>
+
+  <!-- Optional: Style to remove margin and fill screen -->
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: black;
+      height: 100%;
+    }
+    canvas {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- PixiJS will create and inject one via `app.view` -->
+  <script type="module" src="{{ url_for('static', filename='app.js') }}"></script>
+
+</body>
+</html>
