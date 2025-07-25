@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  network-mural:
+    build: .
+    container_name: network-mural
+    ports:
+      - "5090:5090"
+    volumes:
+      - .:/app
+    environment:
+      - FLASK_ENV=development

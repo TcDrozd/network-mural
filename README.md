@@ -12,7 +12,7 @@ The goal is to create a dynamic display — potentially wall-mounted — that in
 - **Backend:** Python, Flask, Flask-SocketIO, psutil
 - **AI:** Ollama (e.g. LLaMA, Deepseek)
 - **Image Gen (WIP):** Stable Diffusion (via local API)
-- **Frontend (Planned):** Minimal HTML/JS (Three.js in stretch goals)
+- **Frontend:** Pixi.js, minimal HTML/JS (Three.js stretch goal)
 
 ---
 
@@ -21,6 +21,8 @@ The goal is to create a dynamic display — potentially wall-mounted — that in
 - Collects real-time network statistics using `psutil`
 - Generates poetic prompts via your local **Ollama** model (e.g. `deepseek-r1`)
 - Prepares a Stable Diffusion API integration to turn prompts into abstract art
+- Real-time animated particle system via Pixi.js frontend
+- Theme manager dynamically adapts visuals based on network state
 - Exposes simple Flask routes for:
   - `GET /generate-prompt` → returns AI description of network activity
   - `GET /generate-image` *(planned)* → returns prompt + generated image
@@ -69,7 +71,7 @@ python app.py
 
 🚧 Project Status
 
-Still early days — mostly backend logic scaffolding and generation handling complete. Frontend and full image output pipeline coming next!
+Frontend visualization and theme system are functional. The project now renders dynamic particles influenced by simulated network state. Image generation pipeline is still under development.
 
 ⸻
 
