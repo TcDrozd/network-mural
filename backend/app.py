@@ -17,4 +17,4 @@ register_socket_handlers(socketio)
 app.register_blueprint(routes)
 
 if __name__ == "__main__":
-    socketio.run(app, host="0.0.0.0", port=5090)
+    socketio.run(app, host="0.0.0.0", port=5090, allow_unsafe_werkzeug=True)
