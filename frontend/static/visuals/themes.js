@@ -1,4 +1,3 @@
-
 export class ThemeManager {
   constructor() {
     this.themes = {
